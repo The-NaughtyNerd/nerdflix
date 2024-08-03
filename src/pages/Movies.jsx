@@ -1,5 +1,5 @@
 const Movies = () => {
-  return <div>Movies</div>;
+  return <div className="pt-[15rem]">Movies</div>;
 };
 
 export default Movies;
