@@ -42,3 +42,9 @@ body {
   /* background-color: #111111; */
   /* background-color: #0f0f0f; */
 }
+
+.heading-2 {
+  padding: 2rem 0 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}

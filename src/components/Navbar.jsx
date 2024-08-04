@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed z-20 w-full h-max flex items-center justify-between py-2 px-8 bg-[#0f0f0f]">
+      <nav className="fixed z-20 w-full h-max flex items-center justify-between py-2 px-10 bg-[#0f0f0f]">
         <div className="w-[8rem] h-[8rem]">
           <img
             src={logo}
@@ -23,7 +23,7 @@ const Navbar = () => {
           />
         </div>
 
-        <ul className="flex w-[45%] justify-between">
+        <ul className="md:flex w-[45%] justify-between hidden">
           {navigation.map((route) => (
             <li
               key={route.id}
