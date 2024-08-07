@@ -4,7 +4,7 @@ import StarRating from './StarRating';
 
 const Sidebar = ({ data }) => {
   return (
-    <div className="hidden md:block w-[25%] h-full fixed right-0 bg-[#313131] px-10 overflow-scroll">
+    <div className="hidden sm:block w-[25%] h-full fixed right-0 bg-[#313131] px-10 overflow-scroll">
       <div className="py-8 grid grid-cols-2 gap-y-6 gap-x-6 ">
         <h3 className="text-[1.8rem] font-bold">Genre</h3>
         <p className="text-right font-bold text-[1.2rem]">More</p>

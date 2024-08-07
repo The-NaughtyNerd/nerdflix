@@ -13,7 +13,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const Movies = () => {
   return (
     <section className="w-screen flex py-36 ">
-      <div className="w-full md:w-[75%] px-0 md:px-10 pt-8 ">
+      <div className="w-full sm:w-[75%] px-0 sm:px-10 pt-8 ">
         <Swiper
           pagination={{
             dynamicBullets: true,
