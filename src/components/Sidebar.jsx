@@ -1,17 +1,17 @@
 import { genres } from '../constants';
-import { mainMovie } from '../assets';
 import { FaStar } from 'react-icons/fa';
+import StarRating from './StarRating';
 
 const Sidebar = ({ data }) => {
   return (
-    <div className="w-[25%] h-full fixed right-0 bg-[#313131] px-10 overflow-scroll">
+    <div className="hidden md:block w-[25%] h-full fixed right-0 bg-[#313131] px-10 overflow-scroll">
       <div className="py-8 grid grid-cols-2 gap-y-6 gap-x-6 ">
         <h3 className="text-[1.8rem] font-bold">Genre</h3>
         <p className="text-right font-bold text-[1.2rem]">More</p>
         {genres.map((genre) => (
           <p
             key={genre.id}
-            className="py-2 px-10 bg-[#131313] text-center rounded-full"
+            className="py-2 px-10 bg-[#131313] hover:bg-[#111111] text-center rounded-full cursor-pointer"
           >
             {genre.name}
           </p>
@@ -37,7 +37,8 @@ const Sidebar = ({ data }) => {
                   <p className="">{item?.year}</p>
                   <p className="">{item?.genre}</p>
                 </div>
-                <div className="flex gap-4 items-center">
+                <StarRating rating={item?.rating} />
+                {/* <div className="flex gap-4 items-center">
                   <p className="">{item?.rating}</p>
                   <div className="flex">
                     <FaStar className="text-[#ffcb00]" />
@@ -46,7 +47,7 @@ const Sidebar = ({ data }) => {
                     <FaStar className="text-[#ffcb00]" />
                     <FaStar className="text-[#ffcb00]" />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
