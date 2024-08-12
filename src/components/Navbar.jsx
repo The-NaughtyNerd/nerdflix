@@ -5,6 +5,7 @@ import { FiSearch } from 'react-icons/fi';
 import { IoNotifications, IoChevronDown } from 'react-icons/io5';
 import { Context } from '../Contexts/Context';
 import { useContext, useEffect, useState } from 'react';
+import { GiHamburger } from 'react-icons/gi';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -15,7 +16,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed z-20 w-screen h-max flex items-center justify-between py-2 px-8 md:px-10 bg-[#0f0f0f]">
-        <div className="w-[8rem] h-[8rem]">
+        <div className="self-center">
+          <GiHamburger className="" />
+        </div>
+
+        <div className="w-[8rem] sm:w-[8rem] h-[6rem] sm:h-[8rem]">
           <img
             src={logo}
             alt="Nerdflix logo"
@@ -43,7 +48,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <form action="#" className="">
+        <form action="#" className="hidden md:block">
           <FiSearch className="absolute top-[3.5rem] w-16" />
           <input
             type="search"

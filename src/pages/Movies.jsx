@@ -4,16 +4,19 @@ import Movie from '../components/movies/Movie';
 import { movies } from '../constants';
 import { GoTriangleLeft, GoTriangleRight } from 'react-icons/go';
 import TopRated from '../components/movies/TopRated';
+import MoviesSlider from '../components/movies/MoviesSlider';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 
+import { useEffect } from 'react';
+
 const Movies = () => {
   return (
     <section className="w-screen flex py-36 ">
-      <div className="w-full sm:w-[75%] px-0 sm:px-10 pt-8 ">
+      <div className="w-full md:w-[75%] px-0 md:px-10 pt-8 ">
         <Swiper
           pagination={{
             dynamicBullets: true,
@@ -30,6 +33,8 @@ const Movies = () => {
         </Swiper>
 
         <div className="px-6 pb-10">
+          <MoviesSlider movieType={movies} detail={'Latest Movies'} />
+
           <div className="flex justify-between items-center">
             <h2 className="heading-2">Latest Movies</h2>
             <div className="flex text-[3.6rem]">
