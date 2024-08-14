@@ -15,15 +15,15 @@ import { useEffect } from 'react';
 
 const Movies = () => {
   return (
-    <section className="w-screen flex py-36 ">
-      <div className="w-full md:w-[75%] px-0 md:px-10 pt-8 ">
+    <section className="w-screen flex py-28 pb-36 ">
+      <div className="w-full lg:w-[75%] px-0 lg:px-10 pt-8 ">
         <Swiper
           pagination={{
             dynamicBullets: true,
           }}
           modules={[Pagination, Autoplay]}
           autoplay={{ delay: 1700 }}
-          className="mySwiper"
+          className="relative"
         >
           {movies.slice(0, 3).map((item, index) => (
             <SwiperSlide key={index}>
@@ -35,38 +35,7 @@ const Movies = () => {
         <div className="px-6 pb-10">
           <MoviesSlider movieType={movies} detail={'Latest Movies'} />
 
-          <div className="flex justify-between items-center">
-            <h2 className="heading-2">Latest Movies</h2>
-            <div className="flex text-[3.6rem]">
-              <GoTriangleLeft className="cursor-pointer" />
-              <GoTriangleRight className="cursor-pointer" />
-            </div>
-          </div>
-
-          <div className="flex gap-8 w-full overflow-x-scroll">
-            {movies.map((item, index) => (
-              <Movie key={index} {...item} />
-            ))}
-          </div>
-
-          <div className="flex justify-between items-center">
-            <h2 className="heading-2">Recommended</h2>
-            <div className="flex text-[3.6rem]">
-              <GoTriangleLeft className="cursor-pointer" />
-              <GoTriangleRight className="cursor-pointer" />
-            </div>
-          </div>
-          <div className="flex gap-8 w-full overflow-x-scroll">
-            {movies.map((movie) => (
-              <Movie
-                key={movie.id}
-                img={movie.img}
-                title={movie.title}
-                year={movie.year}
-                rating={movie.rating}
-              />
-            ))}
-          </div>
+          <MoviesSlider movieType={movies} detail={'Recommended'} />
 
           <TopRated data={movies} />
         </div>

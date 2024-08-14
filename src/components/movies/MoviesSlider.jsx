@@ -11,7 +11,7 @@ const SliderButton = () => {
   const swiper = useSwiper();
 
   return (
-    <div className=" absolute bg-red-600 top-10 right-20 flex text-[2.4rem] z-10">
+    <div className="absolute top-10 right-5 flex text-[3.2rem] z-[100]">
       <GoTriangleLeft
         onClick={() => swiper.slidePrev()}
         className=" cursor-pointer"
@@ -26,34 +26,31 @@ const SliderButton = () => {
 
 const MoviesSlider = ({ movieType, detail }) => {
   return (
-    <div>
-      <h2 className="heading-2">{detail}</h2>
+    <div className="relative">
+      <div className="absolute">
+        <h2 className="heading-2 ">{detail}</h2>
+      </div>
 
-      {/* <div className="flex justify-between items-center">
-        <h2 className="heading-2">{detail}</h2>
-        <div className="relative right-14 text-[3.6rem] bg-red-600">
-          <SliderButton />
-        </div>
-      </div> */}
       <Swiper
         slidesPerView={'auto'}
         spaceBetween={15}
         modules={[Navigation, Autoplay]}
         // autoplay={{ delay: 1700 }}
-        className="w-full"
+        className="w-full z-30 pt-32"
       >
-        <SliderButton />
-
         {movieType.map((item, index) => (
           <SwiperSlide
             key={index}
             style={{
               width: '18rem',
             }}
+            className=""
           >
             <Movie {...item} />
           </SwiperSlide>
         ))}
+
+        <SliderButton />
       </Swiper>
     </div>
   );

@@ -1,27 +1,35 @@
 import { genres } from '../constants';
 import { FaStar } from 'react-icons/fa';
 import StarRating from './StarRating';
+import { useState, useEffect } from 'react';
 
 const Sidebar = ({ data }) => {
+  const [active, setActive] = useState('All');
+
   return (
-    <div className="hidden sm:block w-[25%] h-full fixed right-0 bg-[#313131] px-10 overflow-scroll">
-      <div className="py-8 grid grid-cols-2 gap-y-6 gap-x-6 ">
-        <h3 className="text-[1.8rem] font-bold">Genre</h3>
-        <p className="text-right font-bold text-[1.2rem]">More</p>
+    <div className="hidden lg:block w-[25%] h-full fixed right-0 bg-[#313131] px-10 overflow-scroll pt-8">
+      <h3 className="py-4 text-[1.8rem] font-bold">Genre</h3>
+      <div className="py-8 grid grid-cols-2 gap-y-6 gap-x-8  ">
         {genres.map((genre) => (
-          <p
+          <div
             key={genre.id}
-            className="py-2 px-10 bg-[#131313] hover:bg-[#111111] text-center rounded-full cursor-pointer"
+            onClick={() => {
+              setActive(genre.name);
+            }}
+            className={`md:py-2 md:px-6 xl:py-2 xl:px-10 hover:bg-black w-fit text-center rounded-full cursor-pointer ${
+              active === genre.name ? 'bg-[#000]' : 'bg-[#131313]'
+            } `}
           >
-            {genre.name}
-          </p>
+            <p>{genre.name}</p>
+          </div>
         ))}
       </div>
+
       <div className="py-8 ">
         <h3 className="text-[1.8rem] font-bold">Top Rated</h3>
 
         <div className="flex flex-col mb-[8rem]">
-          {data.map((item, index) => (
+          {data.slice(0, 10).map((item, index) => (
             <div
               key={index}
               className="py-4 flex gap-6 items-center text-[1.2rem]"
