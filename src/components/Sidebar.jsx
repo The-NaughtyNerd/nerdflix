@@ -2,6 +2,7 @@ import { genres } from '../constants';
 import { FaStar } from 'react-icons/fa';
 import StarRating from './StarRating';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ data }) => {
   const [active, setActive] = useState('All');
@@ -34,11 +35,13 @@ const Sidebar = ({ data }) => {
               key={index}
               className="py-4 flex gap-6 items-center text-[1.2rem]"
             >
-              <img
-                src={item.img}
-                alt=""
-                className=" h-[14rem] rounded-[2.4rem]"
-              />
+              <Link to={`/detail/${item?.title}`}>
+                <img
+                  src={item.img}
+                  alt=""
+                  className=" h-[14rem] rounded-[2.4rem]"
+                />
+              </Link>
               <div className="flex flex-col gap-6">
                 <h5 className="text-[1.6rem] font-semibold">{item?.title}</h5>
                 <div className="flex gap-4">

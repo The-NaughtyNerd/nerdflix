@@ -9,7 +9,7 @@ const StarRating = ({ rating }) => {
   const stars = Array(5).fill(0);
 
   return (
-    <div className="text-[1.2rem] flex items-center">
+    <div className=" flex items-center">
       <p className="mr-4">{rating}</p>
       {stars.map((_, index) => {
         return (

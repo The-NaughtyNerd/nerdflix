@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -43,10 +43,34 @@ body {
   /* background-color: #0f0f0f; */
 }
 
+.heading-1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.6rem;
+  /* padding: 0 2.8rem; */
+  font-weight: 600;
+}
+
 .heading-2 {
   padding: 2rem 0 2rem 0;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.heading-3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #131313;
+}
+
+.small-text {
+  color: #bcbcbc;
+  font-size: 1.4rem;
+}
+
+.label {
+  color: #131313;
+  font-weight: 600;
+  padding-left: 0.5rem;
 }
 
 .swiper-pagination-bullet-active {

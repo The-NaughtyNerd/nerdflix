@@ -10,6 +10,7 @@ export default {
 
       fontFamily: {
         jarkata: [' "Plus Jakarta Sans" ', 'sans-serif'],
+        montserrat: [' "Montserrat" ', 'sans-serif'],
       },
     },
   },

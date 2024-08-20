@@ -11,6 +11,7 @@ import movieImg7 from './movie_img2.jpg';
 import movieImg8 from './movie_img3.jpg';
 import movieImg9 from './movie_img4.jpg';
 import movieImg10 from './movie_img5.jpg';
+import bgImg from './background.jpg';
 
 export {
   logo,
@@ -26,4 +27,5 @@ export {
   movieImg8,
   movieImg9,
   movieImg10,
+  bgImg,
 };

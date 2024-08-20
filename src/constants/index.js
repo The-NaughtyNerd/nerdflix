@@ -15,25 +15,25 @@ import {
 export const navigation = [
   {
     id: 1,
-    link: '/',
+    link: '/pages/movies',
     linkName: 'Movies',
     current: true,
   },
   {
     id: 2,
-    link: '/tvshows',
+    link: '/pages/tvshows',
     linkName: 'Tv Shows',
     current: false,
   },
   {
     id: 3,
-    link: '/animations',
+    link: '/pages/animations',
     linkName: 'Animations',
     current: false,
   },
   {
     id: 4,
-    link: '/anime',
+    link: '/pages/anime',
     linkName: 'Anime',
     current: false,
   },
@@ -90,7 +90,12 @@ export const movies = [
     year: '2024',
     rating: '8.5',
     genre: 'Adventure, Action',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 2,
@@ -99,7 +104,13 @@ export const movies = [
     year: '2024',
     rating: '7.5',
     genre: 'Adventure, Action',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 3,
@@ -108,7 +119,13 @@ export const movies = [
     year: '2024',
     rating: '7.5',
     genre: 'Adventure, Animation, Action',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 4,
@@ -117,7 +134,13 @@ export const movies = [
     year: '2024',
     rating: '7.5',
     genre: 'Adventure, Animation',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 5,
@@ -126,7 +149,13 @@ export const movies = [
     year: '2024',
     rating: '7.5',
     genre: 'Romance, Comedy',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 6,
@@ -135,7 +164,13 @@ export const movies = [
     year: '2024',
     rating: '7.5',
     genre: 'Adventure, action',
-    watchtime: '1h 48min',
+    duration: '1h 48min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 7,
@@ -144,7 +179,13 @@ export const movies = [
     year: '2024',
     rating: '7.5',
     genre: 'Adventure, Animation',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 8,
@@ -153,7 +194,13 @@ export const movies = [
     year: '2024',
     rating: '7.5',
     genre: 'Adventure, action',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 9,
@@ -162,7 +209,13 @@ export const movies = [
     year: '2024',
     rating: '6',
     genre: 'Adventure, action',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 10,
@@ -171,7 +224,13 @@ export const movies = [
     year: '2024',
     rating: '8.5',
     genre: 'Thriller, Action, Crime',
-    watchtime: '1h 05min',
+    duration: '1h 05min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
   {
     id: 11,
@@ -180,6 +239,11 @@ export const movies = [
     year: '2024',
     rating: '7.5',
     genre: 'Horror, Thriller',
-    watchtime: '2h 15min',
+    duration: '2h 15min',
+    detail:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore tenetur ab dolore. Illo, eligendi a sint quas laboriosam, laudantium beatae repellendus at magnam dolorem nesciunt quibusdam deserunt sed quae perspiciatis sapiente rem totam eius.',
+    director: 'David Ade',
+    actors:
+      'Ryan Reynolds, Hugh Jackman, Jon Favreau, Brad Pitt, Leonardo Dicaprio, Millie Bobby Brown, Will Smith',
   },
 ];
